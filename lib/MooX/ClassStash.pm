@@ -2,11 +2,8 @@ package MooX::ClassStash;
 BEGIN {
   $MooX::ClassStash::AUTHORITY = 'cpan:GETTY';
 }
-{
-  $MooX::ClassStash::VERSION = '0.005';
-}
 # ABSTRACT: Extra class information for Moo 
-
+$MooX::ClassStash::VERSION = '0.006';
 
 use Moo;
 use Package::Stash;
@@ -254,6 +251,7 @@ sub around_method { install_modifier(shift->class,'around',@_) }
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -262,7 +260,7 @@ MooX::ClassStash - Extra class information for Moo
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -438,4 +436,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

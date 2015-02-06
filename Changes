@@ -1,9 +1,38 @@
 ==================================================
-Changes from 1739-03-06 00:00:00 +0000 to present.
+Changes from 1741-04-24 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.005 at 2012-12-18 18:28:15 +0000
+version 0.006 at 2015-02-06 23:28:02 +0000
+------------------------------------------
+
+  Change: b939623956badf8059d8d62ff741995ed292e96a
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2015-02-07 00:27:53 +0000
+
+    New travis.yml 
+
+  Change: 654bc212d6985ccfe420299ad989cbd82cb41447
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2015-02-07 00:27:04 +0000
+
+    Merge pull request #1 from haarg/test-mod-after-new
+
+    don't modify classes after creating an instance with new 
+
+  Change: 62b70e097a61804663eb524dfdb9f8263299487f
+  Author: Graham Knop <haarg@haarg.org>
+  Date : 2015-02-04 04:14:14 +0000
+
+    don't modify classes after creating an instance with new
+
+    Moo doesn't support adding attributes to a class after it has been
+    instantiated. The next version of Moo is going to start erroring on
+    these cases. Reorganize the tests so we don't create any instances
+    until after doing all of the modifications. 
+
+------------------------------------------
+version 0.005 at 2012-12-18 18:25:25 +0000
 ------------------------------------------
 
   Change: 606d73d25c6949e342b328ec813951ee1d63fda0
@@ -12,6 +41,10 @@ version 0.005 at 2012-12-18 18:28:15 +0000
 
     Implemented get_or_add_attribute, referenced on remove_attribute for
     volunteers (cause its anyway a bad idea) 
+
+------------------------------------------
+version 0.004 at 2012-10-15 03:31:45 +0000
+------------------------------------------
 
   Change: e9ed534af6246def2f2ca4abf7a3a4d284a6ecec
   Author: Torsten Raudssus <torsten@raudss.us>
@@ -24,6 +57,10 @@ version 0.005 at 2012-12-18 18:28:15 +0000
   Date : 2012-10-15 05:26:19 +0000
 
     Try to not let cpantesters fail on missing MooX 
+
+------------------------------------------
+version 0.003 at 2012-10-14 05:12:48 +0000
+------------------------------------------
 
   Change: 0fe0989be28f7fdcc84987e19c07fab047c56df8
   Author: Torsten Raudssus <torsten@raudss.us>
@@ -44,6 +81,10 @@ version 0.005 at 2012-12-18 18:28:15 +0000
 
     Fixed typo in POD 
 
+------------------------------------------
+version 0.002 at 2012-10-14 02:30:48 +0000
+------------------------------------------
+
   Change: 4408e7de2f7c24184d09927bb8c0bb33822028af
   Author: Torsten Raudssus <torsten@raudss.us>
   Date : 2012-10-14 04:30:48 +0000
@@ -61,6 +102,10 @@ version 0.005 at 2012-12-18 18:28:15 +0000
   Date : 2012-10-14 04:08:52 +0000
 
     Less references for multiply attribute names add_attribute calls 
+
+------------------------------------------
+version 0.001 at 2012-10-14 01:56:18 +0000
+------------------------------------------
 
   Change: 14bd7e51dce6a2d4ce846438b9215621e562dcc8
   Author: Torsten Raudssus <torsten@raudss.us>
